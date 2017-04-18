@@ -84,7 +84,7 @@ function mouseClicked() {
     // Sending and receiving data in JSON format using POST mothod
     //
     xhr = new XMLHttpRequest();
-    var url = "localhost:8080";
+    var url = "localhost:8015";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.onreadystatechange = function () { 
