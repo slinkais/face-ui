@@ -84,12 +84,13 @@ function mouseClicked() {
     // Sending and receiving data in JSON format using POST mothod
     //
     xhr = new XMLHttpRequest();
-    var url = "localhost:8015";
+    var url = "http://httpbin.org/post";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.onreadystatechange = function () { 
         if (xhr.status == 200) {
-            status = xhr.responseText;
+            // status = xhr.responseText
+            status = "Great Success";
         } else {
             status = "Status code: " + xhr.status;
         }
