@@ -67,7 +67,7 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
-function mouseClicked() {
+function mousePressed() {
     if (status === "Loading..") {
         return;
     }
@@ -99,4 +99,5 @@ function mouseClicked() {
     }
     var data = capturedImage.pixels;
     xhr.send(data);
+    return false;
 }
